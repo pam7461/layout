@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 박스모델</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        /* 기본형 */
+        .parbox{
+            width:80%;
+            max-width:1200px;
+            margin:20px auto;
+            border:1px solid black;
+            padding:20px;
+        }
+        .child01{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            background:red;
+        }
+        .child02{
+            display:inline-block;
+            width:100px;
+            height:200px;
+            margin-left:152px;
+            background:green;
+        }
+
+
+
+        /* 768px이상 */
+        @media (min-width:768px){
+            .parbox{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parbox">
+        <div class="child child01"></div>
+        <div class="child child02"></div>
+    </div>
+</body>
+</html>

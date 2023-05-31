@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <style>
+        .parbox01{
+            width:600px;
+            margin:0 auto;
+            border:1px solid black;
+            padding:20px;
+        }
+        .child01{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin-bottom:100px;
+            background:red;
+        }
+        .child02{
+            display:inline-block;
+            width:100px;
+            height:200px;
+            margin-left:394px;
+            background:green;
+        }
+        .parbox02{
+            width:600px;
+            margin: 50px auto;
+            border:1px solid black;
+            padding:20px;
+        }
+        .child03{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin-bottom:50px;
+            background:red;
+        }
+        .child04{
+            display:inline-block;
+            width:100px;
+            height:200px;
+            margin-left:144px;
+            margin-right:144px;
+            background:green;
+        }
+        .child05{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin-bottom:100px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>display를 이용한 박스모델 레이아웃</h1>
+    <div class="parbox01">
+        <div class="child child01"></div>
+        <div class="child child02"></div>
+    </div>
+
+    <div class="parbox02">
+        <div class="child child03"></div>
+        <div class="child child04"></div>
+        <div class="child child05"></div>
+    </div>
+</body>
+</html>
