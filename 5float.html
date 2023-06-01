@@ -11,6 +11,9 @@
             margin:0;
             padding:0;
         }
+        img{
+            width:100%;
+        }
         .clearfix::after{
             content:'';
             display:block;
@@ -38,12 +41,46 @@
             background:green;
         }
 
-
+        .header{
+            width:80%;
+            margin:20px auto;
+            border:1px solid black;
+            padding:20px;
+        }
+        .nav01{
+            float:left; 
+            margin-top:60px;  
+            font-size:16px;                    
+        }
+        .nav02{
+            padding-top:60px;
+            float:right;   
+            font-size:16px;                     
+        }
+        .logo{ 
+            width:120px;          
+            margin:0 auto;
+        }
+        li{
+            display:inline;
+        }
 
         /* 768px이상 */
         @media (min-width:768px){
             .parbox{
                 width:100%;
+            }
+            .nav01,.nav02{
+                font-size:32px;
+            }
+            .nav01{
+                margin-top:120px;
+            }
+            .nav02{
+                padding-top:120px;
+            }
+            .logo{
+                width:240px;
             }
         }
     </style>
@@ -52,6 +89,24 @@
     <div class="parbox clearfix">
         <div class="child child01"></div>
         <div class="child child02"></div>       
+    </div>
+
+    <div class="header clearfix">
+        <div class="nav01">
+            <ul>
+                <li><a href="#">파일</a></li>
+                <li><a href="#">편집</a></li>
+                <li><a href="#">보기</a></li>
+            </ul>
+        </div>
+        <div class="nav02">
+            <ul>
+                <li><a href="#">이동</a></li>
+                <li><a href="#">실행</a></li>
+                <li><a href="#">선택영역</a></li>
+            </ul>
+        </div>
+        <div class="logo"><img src="./images/dino.svg" alt="공룡"></div>
     </div>
 </body>
 </html>

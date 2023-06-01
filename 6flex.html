@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙서블 박스</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        .parbox{
+            display:flex;
+            flex-flow:row nowrap;
+            /* flex-flow:column nowrap; */
+
+            /* flex-direction:row; */
+            /* flex-direction:row-reverse; */
+            /* flex-direction:column; */
+            /* flex-direction:column-reverse; */
+            /* flex-wrap:nowrap; */
+            /* flex-wrap:wrap; */
+            /* flex-wrap:wrap-reverse; */
+            /* flex-flow:row nowrap; */
+            /* flex-flow:column nowrap; */
+            /* flex-flow:row wrap; */
+
+            width:500px;
+            height:500px;
+            margin:20px auto;
+            border:1px solid black;
+            padding:20px;
+        }
+        
+        .child01{
+            flex:1;
+            order:1;
+            background:red;
+        }
+        .child02{
+            flex:1;
+            order:2;
+            background:green;
+        }
+        .child03{
+            flex:3;
+            order:3;
+            background:blue;
+        }
+
+        @media (min-width:900px){
+            .parbox{
+                flex-direction:column;
+            }
+            .child01{
+                order:2;
+            }
+            .child02{
+                order:3;
+            }
+            .child03{
+                order:1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parbox">
+        <div class="child child01"></div>
+        <div class="child child02"></div>
+        <div class="child child03"></div>
+    </div>
+</body>
+</html>

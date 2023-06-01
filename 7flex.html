@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙서블 박스의 맞춤</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        .parbox{
+            display:flex;
+            flex-flow:row wrap;
+
+            /* 주축맞춤 */
+            justify-content:space-around;
+            
+
+            /* 교차축맞춤 nowrap */
+            
+
+            /* 교차축맞춤 wrap */
+            /* align-content:flex-start; */
+            
+
+            width:80%;
+            height:500px;
+            margin:20px auto;
+            background:rgba(255,0,0,0.2);
+        }
+        .child{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:center;
+            align-items:center;
+            width:100px;
+            height:100px;
+            text-align:center;
+        }
+        .child01{       
+            background:red;
+        }
+        .child02{ 
+            background:green;
+        }
+        .child03{
+            background:blue;
+        }
+        .child04{
+            background:yellow;
+        }
+        .child05{
+            background:cyan;
+        }
+        .child06{
+            align-self:flex-end;
+            background:magenta;
+        }
+    </style>
+</head>
+<body>
+    <div class="parbox">
+        <div class="child child01">RED BOX(빨강 상자)</div>
+        <div class="child child02">GREEN</div>
+        <div class="child child03">BLUE</div>
+        <div class="child child04">YELLOW</div>
+        <div class="child child05">CYAN</div>
+        <div class="child child06">MAGENTA</div>
+    </div>
+</body>
+</html>
