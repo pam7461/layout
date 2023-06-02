@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            padding:10px;
+            background:#2288dd;
+            font-weight:700;
+            font-size:32px;
+        }
+        .header,.menu,.main,.right,.footer{
+            background:lightblue;
+            padding:30px 0;
+            text-align:center;
+        }
+        .header{
+            margin-bottom:10px;
+        }
+        .menu{
+            margin-right:10px;
+            flex:2;
+        }
+        .tmp{
+            flex:10;
+        }
+        .sec{
+            display:flex;
+        }
+        .main-right{
+            display:flex;
+            margin-bottom:10px;
+        }
+        .main{
+            flex:6;
+            margin-right:10px;
+        }
+        .right{
+            flex:4;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">HEADER</header>
+        <section class="sec">
+            <nav class="menu">MENU</nav>
+            <div class="tmp">
+                <div class="main-right">
+                    <div class="main">MAIN</div>
+                    <div class="right">RIGHT</div>
+                </div>
+                <footer class="footer">FOOTER</footer>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

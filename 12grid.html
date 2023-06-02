@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드템플릿</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-template-rows:100px 100px 100px;
+            gap:10px;
+
+            width:80%;
+            margin:0 auto;
+            padding:10px;
+            background:darkblue;
+        }
+        .item{
+            background:white;
+            font-size:32px;
+            text-align:center;
+            line-height:100px;            
+            transition:5s;
+        }
+        .item01{order:1;}
+        .item02{order:2;}
+        .item03{order:3;}
+        .item04{order:4;}
+        .item05{order:5;}
+
+        @media (min-width:800px){
+            .item01{order:3;}
+            .item02{order:5;}            
+            .item04{order:4;}            
+        }
+
+        @media (min-width:1000px){
+            .item03{display:none;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item01">1</div>
+        <div class="item item02">2</div>
+        <div class="item item03">3</div>
+        <div class="item item04">4</div>
+        <div class="item item05">5</div>
+    </div>
+</body>
+</html>

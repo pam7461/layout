@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid(그리드)</title>
+    <style>
+        h1{text-align:center;}
+        .item{
+            height:100px;
+            background:lightblue;
+            font-weight:700;
+            font-size:48px;
+            text-align:center;
+            line-height:100px;
+        }
+        .item01{grid-area:h;}
+        .item02{grid-area:n;height:210px;}
+        .item03{grid-area:m;}
+        .item04{grid-area:r;}
+        .item05{grid-area:f;}
+        .container{
+            display:grid;
+            grid-template-areas:
+                'h h h h h h h h h h h h'
+                'n n n m m m m m r r r r'
+                'n n n f f f f f f f f f';
+            gap:10px;
+            width:1210px;
+            margin:0 auto;
+            padding:10px;
+            background:#2266dd;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <h1>그리드를 이용한 레이아웃</h1>
+        <div class="container">
+            <div class="item item01">HEADER</div>
+            <div class="item item02">MENU</div>
+            <div class="item item03">MAIN</div>
+            <div class="item item04">RIGHT</div>
+            <div class="item item05">FOOTER</div>
+        </div>
+    </section>
+</body>
+</html>
